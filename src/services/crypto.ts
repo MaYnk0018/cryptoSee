@@ -1,4 +1,4 @@
-import { CryptoPriceData } from '../model/coin.ts';
+import { CryptoPriceData } from '../model/coin.js';
 import { calculateStandardDeviation } from '../utils/maths.js';
 import type { CryptoStats, PriceDeviation } from '../types/index.js';
 import { ValidCoin } from '../config/config.js';

@@ -6,8 +6,9 @@
   "scripts": {
     "start": "node dist/app.js",
     "dev": "node --loader ts-node/esm src/app.ts",
-    "build": "tsc",
-    "watch": "tsc -w"
+    "build": "npm run clean && tsc",
+    "watch": "tsc -w",
+    "clean": "rm -rf dist"
   },
   "engines": {
     "node": ">=18.17.0"
