@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { cryptoService } from '../services/crypto.ts';
+import { cryptoService } from '../services/crypto.js';
 import { config, ValidCoin } from '../config/config.js';
 
 const router = Router();

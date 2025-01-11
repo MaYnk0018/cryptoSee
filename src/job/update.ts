@@ -1,6 +1,6 @@
 import cron from 'node-cron';
-import { coinGeckoService } from '../services/coin.ts';
-import { CryptoPriceData } from '../model/coin.ts';
+import { coinGeckoService } from '../services/coin.js';
+import { CryptoPriceData } from '../model/coin.js';
 import { config } from '../config/config.js';
 
 async function updateCryptoPrices(): Promise<void> {
