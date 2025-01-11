@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: crypto-price-tracker
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: node dist/app.js
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: MONGODB_URI
+        sync: false
